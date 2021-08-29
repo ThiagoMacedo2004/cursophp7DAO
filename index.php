@@ -38,11 +38,23 @@ $aluno = new Usuario("Thiago de Souza Macedo", "gustavo888****");
 
 ////////////////////////////////////////////////////////////////
 //ATUALIZANDO DADOS NO BANCO
+// $usuario = new Usuario();
+// $usuario->loadbyId(15);
+
+// $usuario->update("Thiago Macedo", "8888888");
+// echo $usuario;
+
+
+/*
+DELETANDO LINHA NO BANCO DE DADOS
+*/
 $usuario = new Usuario();
 $usuario->loadbyId(15);
+$usuario->delete();
 
-$usuario->update("Thiago Macedo", "8888888");
 echo $usuario;
+
+
 
 
 
